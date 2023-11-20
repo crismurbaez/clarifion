@@ -3,7 +3,7 @@ import s from './upsell.module.css';
 
 
 const Upsell = () => {
-
+    // steps of frame four
     const steps = [
 
         {
@@ -48,6 +48,7 @@ const Upsell = () => {
 
     return (
         <div className={s.upsell}>
+            {/* FRAME ONE */}
             <div className={s.frameone}>
                 <div><img src="/images/clarifion.png" alt="clarifion" /></div>
                 <div>
@@ -55,12 +56,15 @@ const Upsell = () => {
                     <img src="/images/norton.svg" alt="norton" />
                 </div>
             </div>
+            {/* FRAME TWO */}
             <div className={s.frametwo}>
                 Wait ! Your Order In Progress
             </div>
+            {/* FRAME THREE */}
             <div className={s.framethree}>
                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
             </div>
+            {/* FRAME FOUR */}
             <div className={s.framefour}>
                 {
                     steps.map(step => {
@@ -80,10 +84,28 @@ const Upsell = () => {
                     })
                 }
             </div>
+            {/* FRAME FIVE */}
             <div className={s.framefive}>
                 <div className={s.sectionleft}>
                     <div><img className={s.imageoffer} src="/images/imageoffer.png" alt="imageoffer" /></div>
-                    <div></div>
+                    <div className={s.customersection}>
+                        <div className={s.customer}>
+                            <div><img src="/images/customerkent.png" width={48} height={48} alt="image customer" /></div>
+                            <div className={s.customernivel}>
+                                <img src="/images/Stars.svg" alt="image stars" />
+                                <div className={s.datecustomer}>
+                                    <div className={s.customername}>Kent T.</div>
+                                    <img className={s.imageverify} src="/images/verifygreen.svg" alt="verify green" />
+                                    <div className={s.verify}>Verified Customer</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div className={s.comment}>“As soon as the Clarifions arrived I put one in my bedroom.
+                            This was late in the afternoon. When I went to the bedroom in the evening it
+                            smelled clean. When I went to bed I felt I could breathe better. Wonderful.”</div>
+                    </div>
                 </div>
                 <div className={s.sectionright}></div>
             </div>

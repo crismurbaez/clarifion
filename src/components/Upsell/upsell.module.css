@@ -6,6 +6,7 @@
 
 }
 
+/* FRAME ONE */
 .frameone {
     width: 100%;
     height: 96px;
@@ -14,6 +15,7 @@
     align-items: center;
 }
 
+/* FRAME TWO */
 .frametwo {
     font-size: 48px;
     color: #000;
@@ -24,6 +26,7 @@
     margin-bottom: 24px;
 }
 
+/* FRAME THREE */
 .framethree {
     font-size: 24px;
     color: #000;
@@ -33,6 +36,7 @@
     align-items: center;
 }
 
+/* FRAMEFOUR */
 .framefour {
     width: 100%;
     height: 40px;
@@ -81,12 +85,12 @@
     font-size: 20px;
 }
 
+/* FRAME FIVE */
 .framefive {
     width: 100%;
     height: 879px;
     padding: 40px;
     display: flex;
-
 }
 
 .sectionleft {
@@ -101,6 +105,51 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 24px;
+}
+
+.customersection {
+    width: 575px;
+    height: 186px;
+    padding: 24px;
+    margin-left: 40px;
+}
+
+.customername {
+    color: #333333;
+    font-size: 14px;
+}
+
+.customer {
+    display: flex;
+}
+
+.customernivel {
+    margin-left: 13px;
+}
+
+.datecustomer {
+    display: flex;
+
+}
+
+.imageverify {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.verify {
+    color: #5bb59a;
+    font-size: 12px;
+
+}
+
+.comment {
+    width: 100%;
+    color: #4D5254;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
 
 }
 

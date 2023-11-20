@@ -11,7 +11,6 @@ function App() {
       <UpBar />
       <Upsell />
       <BottomBar />
-
     </div>
   );
 }
