@@ -41,15 +41,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .step {
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
+    display: flex;
     align-items: center;
     gap: 20px;
-    display: 'inline-flex';
 }
 
 .tickcircle {
@@ -66,29 +65,46 @@
     top: 0;
 }
 
-.containertick {
-    position: absolute;
-    color: white;
-    width: 16px;
-    height: 16px;
-    left: 12;
-    top: 12;
-
-}
-
 .imagetick {
     position: absolute;
     width: 20px;
     height: 16px;
-    left: -2;
-    top: 0;
+    left: 12px;
+    top: 12px;
+}
+
+.number {
+    position: absolute;
+    font-family: 'Manrope';
+    left: 14px;
+    top: 8px;
+    font-size: 20px;
 }
 
 .framefive {
     width: 100%;
     height: 879px;
+    padding: 40px;
+    display: flex;
+
 }
 
-.text {
-    margin-left: 30px;
+.sectionleft {
+    width: 100%;
+    height: 100%;
+}
+
+.imageoffer {
+    width: 575px;
+    height: 591px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+
+}
+
+.sectionright {
+    width: 100%;
+    height: 100%;
 }

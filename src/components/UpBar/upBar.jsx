@@ -32,7 +32,7 @@ const UpBar = () => {
                 datas.map(data => {
                     return (
                         <div className={s.data}>
-                            <img src={data.src} alt={data.alt} />
+                            <img className={s.image} src={data.src} alt={data.alt} />
                             <spam>{data.text}</spam>
                         </div>
                     )
