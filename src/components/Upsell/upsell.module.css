@@ -91,16 +91,14 @@
     height: 879px;
     padding: 40px;
     display: flex;
-    border-color: #000;
-    border: 1px solid;
+
 }
 
 /* section left frame five */
 .sectionleft {
     width: 100%;
     height: 100%;
-    border-color: #000;
-    border: 1px solid;
+
 }
 
 .imageoffer {
@@ -113,8 +111,7 @@
     width: 575px;
     height: 186px;
     padding: 24px;
-    border-color: #000;
-    border: 1px solid;
+
 }
 
 .customername {
@@ -164,8 +161,7 @@
     width: 100%;
     height: 100%;
     margin-left: 40px;
-    border-color: #000;
-    border: 1px solid
+
 }
 
 .special {
@@ -175,8 +171,7 @@
     font-family: 'Manrope';
     font-weight: 400;
     text-transform: capitalize;
-    border-color: #000;
-    border: 1px solid
+
 }
 
 .prominent {
@@ -201,8 +196,6 @@
     width: 100%;
     display: inline-flex;
     flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
     gap: 15px;
 
 }
@@ -250,4 +243,79 @@
     flex-direction: row;
     gap: 12px;
     color: #37465A;
+}
+
+.percentage {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.save {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+}
+
+.colorsave {
+    color: #2C7EF8;
+}
+
+.buttonyes {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+    height: 59px;
+    padding-top: 19.16px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-bottom: 12px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #59AE43;
+    border-radius: 50px;
+}
+
+.free {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 12px;
+    color: #4D5254;
+    border-radius: 4px;
+    border: 1px solid #CFCFCF
+}
+
+.nothanks {
+    display: flex;
+    justify-content: center;
+    color: #F82C2C;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.satisfaction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 22.40px;
+    color: #4D5254;
+}
+
+.imagesatisfaction {
+    width: 88px;
+    height: 88px;
 }
