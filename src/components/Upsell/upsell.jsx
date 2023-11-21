@@ -152,7 +152,7 @@ const Upsell = () => {
                         <div className={s.tickdetail}> <img src="/images/tick-circle-blue.svg" alt="tick blue" /><b>Perfect for every room</b>  in all types of places.</div>
                     </div>
                     <div>
-                        <img src="/images/Group%.svg" alt="símbolo %" />
+                        <img src="/images/percentage.svg" alt="símbolo %" />
                     </div>
                     <div></div>
                 </div>
