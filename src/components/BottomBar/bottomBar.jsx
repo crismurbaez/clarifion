@@ -21,7 +21,7 @@ const BottomBar = () => {
 
                 <div className={s.data}>
                     <spam>{text[0]}</spam>
-                    <img className={s.image} src='/images/line2.png' alt='line2' />
+                    <img className={s.image} src='/images/Line2.png' alt='line2' />
                     <spam>{text[1]}</spam>
                 </div>
 
