@@ -120,24 +120,52 @@ const Upsell = () => {
                         <span >
                             ($84.00 total!)</span>
                     </div>
-                    <div>
-                        <img src="/images/image-removebg.png" alt="image" />
+                    <div className={s.clarifion}>
+                        <div className={s.imageclarifion}><img src="/images/image-removebg.png" alt="image" /></div>
+
+
+                        <div className={s.detail}>
+                            <div className={s.title}>
+                                <div>Clarifion Air Ionizer</div>
+                                <div className={s.price}>
+                                    <div className={s.deprecatedprice} >$180</div>
+                                    <div className={s.validprice}>$84</div>
+                                </div>
+                            </div>
+                            {/* stars */}
+                            <div><img src="/images/Stars.svg" alt="images stars" /></div>
+                            <div className={s.stock}>
+                                {/* blue boton */}
+                                <div style={{ width: 16, height: 16, position: 'relative' }}>
+                                    <div style={{ width: 16, height: 16, left: 0, top: 0, position: 'absolute', background: '#E3EEFF', borderRadius: 9999 }} />
+                                    <div style={{ width: 8.53, height: 8.53, left: 3.79, top: 3.79, position: 'absolute', background: '#2C7EF8', borderRadius: 9999 }} />
+                                </div>
+
+                                <div>12 left in Stock</div>
+                            </div>
+                            <div className={s.commentproduct}>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</div>
+                        </div>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <div className={s.tickdetail}><img src="/images/tick-circle-blue.svg" alt="tick blue" />Negative Ion Technology may <b>help with allergens</b> </div>
+                        <div className={s.tickdetail}> <img src="/images/tick-circle-blue.svg" alt="tick blue" />Designed for <b>air rejuvenation</b> </div>
+                        <div className={s.tickdetail}> <img src="/images/tick-circle-blue.svg" alt="tick blue" /><b>Perfect for every room</b>  in all types of places.</div>
+                    </div>
+                    <div>
+                        <img src="/images/Group%.svg" alt="símbolo %" />
+                    </div>
                     <div></div>
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };
 
 export default Upsell;
 
 
-// FRAME 12, AL LADO DE LA IMAGEN
+// FRAME 12, AL LADO DE LA IMAGEN   LISTO!!!!!!!!!!!!!!!!!!!!
 {/* <div style={{width: '100%', height: '100%', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 15, display: 'inline-flex'}}>
     <div style={{alignSelf: 'stretch', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
         <div style={{color: 'black', fontSize: 20, fontFamily: 'Manrope', fontWeight: '400', textTransform: 'capitalize', lineHeight: 28, wordWrap: 'break-word'}}>Clarifion Air Ionizer</div>
@@ -174,7 +202,7 @@ export default Upsell;
 </div> */}
 
 
-// DEBAJO DEL FRAME 12
+// DEBAJO DEL FRAME 12 LISTO!!!!!!!!!!!!!!!!!!!
 
 {/* <div style={{width: '100%', height: '100%', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 16, display: 'inline-flex'}}>
     <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 12, display: 'inline-flex'}}>

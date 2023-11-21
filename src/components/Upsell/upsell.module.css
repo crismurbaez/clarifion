@@ -158,23 +158,96 @@
 
 /* section right frame five */
 .sectionright {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     width: 100%;
     height: 100%;
-    display: flex;
-    gap: 32px;
+    margin-left: 40px;
+    border-color: #000;
+    border: 1px solid
 }
 
 .special {
-    display: inline-flex;
     width: 100%;
+    height: 113px;
     font-size: 32px;
     font-family: 'Manrope';
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 44.80;
-    word-wrap: break-word;
+    border-color: #000;
+    border: 1px solid
 }
 
 .prominent {
     color: #2C7EF8;
+}
+
+.clarifion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.imageclarifion {
+    width: 134px;
+    height: 134px;
+    background-color: #2C7EF8;
+    border-radius: 10px;
+}
+
+.detail {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    gap: 15px;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.deprecatedprice {
+    color: #969696;
+    font-size: 16;
+    text-decoration: line-through;
+    text-transform: capitalize;
+
+}
+
+.validprice {
+    color: #2C7EF8;
+    font-size: 22;
+    text-transform: capitalize;
+}
+
+.stock {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    color: #37465A;
+}
+
+.commentproduct {
+    color: #37465A;
+}
+
+.tickdetail {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    color: #37465A;
 }
