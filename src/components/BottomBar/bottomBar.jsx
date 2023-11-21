@@ -3,12 +3,6 @@ import s from './bottomBar.module.css';
 
 const BottomBar = () => {
 
-    const line2 =
-    {
-        src: '/images/line2.png',
-        alt: 'line2',
-    }
-
     const icon = {
         src: '/images/lock.svg',
         alt: 'heart',
@@ -27,7 +21,7 @@ const BottomBar = () => {
 
                 <div className={s.data}>
                     <spam>{text[0]}</spam>
-                    <img className={s.image} src={line2.src} alt={line2.alt} />
+                    <img className={s.image} src='/images/line2.png' alt='line2' />
                     <spam>{text[1]}</spam>
                 </div>
 
