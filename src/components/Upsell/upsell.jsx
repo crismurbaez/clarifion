@@ -180,7 +180,7 @@ const Upsell = () => {
                         <div>
                             <button className={s.buttonyes}>
                                 <div>Yes - Claim my discount</div>
-                                <img src="/images/arrow.svg" alt="arrow" />
+                                <img className={s.arrowbutton} src="/images/arrow.svg" alt="arrow" />
                             </button>
                         </div>
                         <div className={s.free}>
@@ -188,8 +188,9 @@ const Upsell = () => {
                             <img src="/images/Line2.svg" alt="line" />
                             <img src="/images/lock2.svg" alt="lock" />
                             <div>Secure 256-bit SSL encryption.</div>
-                            <img src="/images/Line2.svg" alt="line" />
-                            <div>
+
+                            <div className={s.paymodedestokp}>
+                                <img src="/images/Line2.svg" alt="line" />
                                 <img src="/images/visa.svg" alt="visa" />
                                 <img src="/images/shop-pay.svg" alt="shop-pay" />
                                 <img src="/images/paypal.svg" alt="paypal" />
@@ -198,6 +199,17 @@ const Upsell = () => {
                                 <img src="/images/apple-pay.svg" alt="apple" />
                                 <img src="/images/amex.svg" alt="amex" />
                             </div>
+                        </div>
+                        <div className={s.linemovile}><img src="/images/Line3.png" alt="line" /></div>
+
+                        <div className={s.paymodemovile}>
+                            <img src="/images/visa.svg" alt="visa" />
+                            <img src="/images/shop-pay.svg" alt="shop-pay" />
+                            <img src="/images/paypal.svg" alt="paypal" />
+                            <img src="/images/mastercard.svg" alt="mastercard" />
+                            <img src="/images/gpay.svg" alt="gpay" />
+                            <img src="/images/apple-pay.svg" alt="apple" />
+                            <img src="/images/amex.svg" alt="amex" />
                         </div>
                         <div className={s.nothanks}>
                             No thanks, I don’t want this.
