@@ -53,6 +53,7 @@ const Upsell = () => {
     return (
         <div className={s.upsell}>
             {/* FRAME ONE */}
+            {/* images logo */}
             <div className={s.frameone}>
                 <div >
                     <img className={s.clarifionlogo}
@@ -65,14 +66,17 @@ const Upsell = () => {
                 </div>
             </div>
             {/* FRAME TWO */}
+            {/* title */}
             <div className={s.frametwo}>
                 Wait ! Your Order In Progress
             </div>
             {/* FRAME THREE */}
+            {/* subtitle */}
             <div className={s.framethree}>
                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
             </div>
             {/* FRAME FOUR */}
+            {/* steps */}
             <div className={s.framefour}>
                 {
                     steps.map(st => {
@@ -94,6 +98,7 @@ const Upsell = () => {
                 }
             </div>
             {/* FRAME FIVE */}
+            {/* sections */}
             <div className={s.framefive}>
                 {/* left section frame five */}
                 <div className={s.leftsection}>
@@ -130,9 +135,7 @@ const Upsell = () => {
                             ($84.00 total!)</span>
                     </div>
                     <div className={s.clarifion}>
-                        <div className={s.imageclarifion}><img src="/images/image-removebg.png" alt="image" /></div>
-
-
+                        <div className={s.imageclarifion}><img className={s.imageclarifion} src="/images/image-removebg.png" alt="image" /></div>
                         <div className={s.detail}>
                             <div className={s.title}>
                                 <div>Clarifion Air Ionizer</div>
@@ -152,10 +155,11 @@ const Upsell = () => {
 
                                 <div>12 left in Stock</div>
                             </div>
-                            <div className={s.commentproduct}>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</div>
+                            <div className={s.commentproductdesktop}>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</div>
                         </div>
                     </div>
-                    <div>
+                    <div className={s.commentproductmovile}>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</div>
+                    <div className={s.ticklist}>
                         <div className={s.tickdetail}><img src="/images/tick-circle-blue.svg" alt="tick blue" />Negative Ion Technology may <b>help with allergens</b> </div>
                         <div className={s.tickdetail}> <img src="/images/tick-circle-blue.svg" alt="tick blue" />Designed for <b>air rejuvenation</b> </div>
                         <div className={s.tickdetail}> <img src="/images/tick-circle-blue.svg" alt="tick blue" /><b>Perfect for every room</b>  in all types of places.</div>
@@ -164,12 +168,12 @@ const Upsell = () => {
                         <div><img src="/images/percentage.svg" alt="símbolo %" /></div>
 
                         <div className={s.save}>
-                            <div>Save &nbsp;</div>
-                            <div className={s.colorsave}> 53% &nbsp;</div>
-                            <div> and get &nbsp;</div>
-                            <div className={s.colorsave}> 6 extra Clarifision &nbsp;</div>
-                            <div> for only &nbsp;</div>
-                            <div className={s.colorsave}> $14 Each.</div>
+                            <span>Save &nbsp;</span>
+                            <span className={s.colorsave}> 53% &nbsp;</span>
+                            <span> and get &nbsp;</span>
+                            <span className={s.colorsave}> 6 extra Clarifision &nbsp;</span>
+                            <span> for only &nbsp;</span>
+                            <span className={s.colorsave}> $14 Each.</span>
                         </div>
                     </div>
                     <div>
