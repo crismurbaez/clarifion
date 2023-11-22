@@ -2,41 +2,57 @@
     width: 100%;
     height: 1241px;
     background-color: white;
-
-
 }
 
 /* FRAME ONE */
+/* images logo */
+
 .frameone {
     width: 100%;
-    height: 96px;
+    height: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.clarifionlogo {
+    height: 36px;
+}
+
+.topimages {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
 /* FRAME TWO */
+/* title */
 .frametwo {
     font-size: 48px;
+    line-height: 48px;
     color: #000;
     font-family: 'Manrope';
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 24px;
 }
 
 /* FRAME THREE */
+/* subtitle */
 .framethree {
     font-size: 24px;
     color: #000;
     font-family: 'Manrope';
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 /* FRAMEFOUR */
+/* steps */
 .framefour {
     width: 100%;
     height: 40px;
@@ -85,33 +101,34 @@
     font-size: 20px;
 }
 
+.steptext {
+    display: inline;
+}
+
 /* FRAME FIVE */
+/* sections */
 .framefive {
     width: 100%;
     height: 879px;
     padding: 40px;
     display: flex;
-
 }
 
-/* section left frame five */
-.sectionleft {
+/*  left section frame five */
+.leftsection {
     width: 100%;
     height: 100%;
-
 }
 
 .imageoffer {
     width: 575px;
     height: 591px;
-
 }
 
 .customersection {
     width: 575px;
     height: 186px;
     padding: 24px;
-
 }
 
 .customername {
@@ -129,7 +146,6 @@
 
 .datecustomer {
     display: flex;
-
 }
 
 .imageverify {
@@ -153,10 +169,11 @@
 
 }
 
-/* section right frame five */
-.sectionright {
+/* right section  frame five */
+.rightsection {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 32px;
     width: 575px;
     margin-left: 40px;
@@ -164,8 +181,6 @@
 }
 
 .special {
-    width: 575px;
-    height: 113px;
     font-size: 32px;
     font-family: 'Manrope';
     font-weight: 400;
@@ -322,4 +337,88 @@
 .textsatisfaction {
     width: 446px;
     height: 78px;
+}
+
+/* ------------------------------- */
+/*        responsive 480px         */
+/* ------------------------------- */
+
+@media only screen and (max-width: 999px) {
+    .upsell {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* FRAME ONE */
+    /* images logo */
+    .frameone {
+        height: 20px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        justify-content: space-between;
+    }
+
+    .clarifionlogo {
+        height: 20px;
+    }
+
+    .topimages {
+        gap: 16px;
+    }
+
+    /* FRAME TWO */
+    /* title */
+    .frametwo {
+        line-height: 44.80px;
+        text-align: center;
+        font-family: 'Manrope';
+        font-size: 32px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    /* FRAME THREE */
+    /* subtitle */
+    .framethree {
+        text-align: center;
+    }
+
+    /* FRAME FOUR */
+    /* steps */
+    .framefour {
+        font-size: 12px;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .steptext {
+        display: none;
+    }
+
+    /* FRAME FIVE */
+    /* sections */
+    .framefive {
+        padding: 0;
+    }
+
+    /*  left section frame five */
+    .leftsection {
+        display: none;
+    }
+
+    /* right section  frame five */
+    .rightsection {
+        width: 360px;
+        margin: 0;
+        gap: 24px;
+    }
+
+    .special {
+        text-align: center;
+        font-size: 24px;
+    }
 }

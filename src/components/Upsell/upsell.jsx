@@ -9,7 +9,8 @@ const Upsell = () => {
         {
             src: '/images/circle-green.svg',
             alt: 'circle',
-            text: 'Step 1 : Cart Review',
+            step: 'Step 1 : ',
+            text: 'Cart Review',
             srctick: '/images/tick-circle.svg',
             number: '',
             style: null,
@@ -19,7 +20,8 @@ const Upsell = () => {
         {
             src: '/images/circle-green.svg',
             alt: 'circle',
-            text: 'Step 2 : Checkout',
+            step: 'Step 2 : ',
+            text: 'Checkout',
             srctick: '/images/tick-circle.svg',
             number: '',
             style: null,
@@ -29,7 +31,8 @@ const Upsell = () => {
         {
             src: '/images/circle-blue.svg',
             alt: 'circle',
-            text: 'Step 3 : Special Offer',
+            step: 'Step 3 : ',
+            text: 'Special Offer',
             srctick: '',
             number: '3',
             stylenumber: { color: 'white' },
@@ -38,7 +41,8 @@ const Upsell = () => {
         {
             src: '/images/circle-border-blue.svg',
             alt: 'circle',
-            text: 'Step 4 : Confirmation',
+            step: 'Step 4 : ',
+            text: 'Confirmation',
             srctick: '',
             number: '4',
             stylenumber: { color: '#2C7EF8' },
@@ -50,10 +54,14 @@ const Upsell = () => {
         <div className={s.upsell}>
             {/* FRAME ONE */}
             <div className={s.frameone}>
-                <div><img src="/images/clarifion.png" alt="clarifion" /></div>
-                <div>
-                    <img src="/images/mcafee.svg" alt="mcafee" />
-                    <img src="/images/norton.svg" alt="norton" />
+                <div >
+                    <img className={s.clarifionlogo}
+                        src="/images/clarifion.png"
+                        alt="clarifion" />
+                </div>
+                <div className={s.topimages}>
+                    <img className={s.clarifionlogo} src="/images/mcafee.svg" alt="mcafee" />
+                    <img className={s.clarifionlogo} src="/images/norton.svg" alt="norton" />
                 </div>
             </div>
             {/* FRAME TWO */}
@@ -67,18 +75,19 @@ const Upsell = () => {
             {/* FRAME FOUR */}
             <div className={s.framefour}>
                 {
-                    steps.map(step => {
+                    steps.map(st => {
                         return (
                             <div className={s.step}>
                                 <div className={s.tickcircle}>
-                                    <img className={s.imagecircle} src={step.src} alt={step.alt} />
-                                    {step.number === '' ?
-                                        <img className={s.imagetick} src={step.srctick} alt={step.alt} />
+                                    <img className={s.imagecircle} src={st.src} alt={st.alt} />
+                                    {st.number === '' ?
+                                        <img className={s.imagetick} src={st.srctick} alt={st.alt} />
                                         :
-                                        <spam style={step.stylenumber} className={s.number}>{step.number}</spam>
+                                        <spam style={st.stylenumber} className={s.number}>{st.number}</spam>
                                     }
                                 </div>
-                                <div style={step.styletext} >{step.text}</div>
+                                <div style={st.styletext} className={s.steptext} >{st.step}</div>
+                                <div style={st.styletext} >{st.text}</div>
                             </div>
                         )
                     })
@@ -86,8 +95,8 @@ const Upsell = () => {
             </div>
             {/* FRAME FIVE */}
             <div className={s.framefive}>
-                {/* section left frame five */}
-                <div className={s.sectionleft}>
+                {/* left section frame five */}
+                <div className={s.leftsection}>
                     <div><img className={s.imageoffer} src="/images/imageoffer.png" alt="imageoffer" /></div>
                     <div className={s.customersection}>
                         <div className={s.customer}>
@@ -108,15 +117,15 @@ const Upsell = () => {
                             smelled clean. When I went to bed I felt I could breathe better. Wonderful.”</div>
                     </div>
                 </div>
-                {/* section right frame five */}
-                <div className={s.sectionright}>
+                {/* right section frame five */}
+                <div className={s.rightsection}>
                     <div className={s.special}>
                         <span className={s.prominent}>
                             ONE TIME ONLY</span>
                         <span >
-                            special price for 6 extra Clarifion for only </span>
+                            &nbsp;Special price for 6 extra Clarifion for only&nbsp;</span>
                         <span className={s.prominent}>
-                            $14 each</span>
+                            $14 each&nbsp;</span>
                         <span >
                             ($84.00 total!)</span>
                     </div>
