@@ -53,10 +53,10 @@ const UpBar = () => {
                         datas.map((data, index) => {
                             return (
                                 <div className={s.data}>
-                                    <div>
-                                        <img className={s.image} src={data.src} alt={data.alt} />
-                                        <spam>{data.text}</spam>
-                                    </div>
+
+                                    <img className={s.image} src={data.src} alt={data.alt} />
+                                    <spam>{data.text}</spam>
+
                                 </div>
                             )
                         })
@@ -69,10 +69,10 @@ const UpBar = () => {
                     <button className={s.layerleft} onClick={before}><img src="/images/Layer.png" alt="layer" /></button>
 
                     <div className={s.data}>
-                        <div>
-                            <img className={s.image} src={datas[count].src} alt={datas[count].alt} />
-                            <spam>{datas[count].text}</spam>
-                        </div>
+
+                        <img className={s.image} src={datas[count].src} alt={datas[count].alt} />
+                        <spam>{datas[count].text}</spam>
+
                     </div>
                     <button className={s.layerright} onClick={next}><img src="/images/Layer.png" alt="layer" /></button>
                 </div>
