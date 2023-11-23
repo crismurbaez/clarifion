@@ -333,6 +333,10 @@
     display: inline;
 }
 
+.linemovile {
+    display: none;
+}
+
 .paymodemovile {
     display: none;
 
