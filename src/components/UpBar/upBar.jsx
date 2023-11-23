@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './upBar.module.css';
 
 const UpBar = () => {
-
+    var [count, setCount] = useState(0);
     const datas = [
         {
             src: '/images/checkmark-starburst-20-regular.svg',
@@ -26,18 +26,57 @@ const UpBar = () => {
         },
     ]
 
+    function next() {
+        var number = count;
+        number += 1;
+        if (number > datas.length - 1) {
+            number -= 1
+        }
+        setCount(number);
+    }
+
+    function before() {
+        var number = count;
+        number -= 1;
+        if (number < 0) {
+            number += 1;
+        }
+        setCount(number);
+    }
+
     return (
-        <div className={s.upbar}>
-            {
-                datas.map(data => {
-                    return (
-                        <div className={s.data}>
-                            <img className={s.image} src={data.src} alt={data.alt} />
-                            <spam>{data.text}</spam>
+        <div >
+            {/* desktop */}
+            <div className={s.upbardesktop}>
+                <div className={s.upbar}>
+                    {
+                        datas.map((data, index) => {
+                            return (
+                                <div className={s.data}>
+                                    <div>
+                                        <img className={s.image} src={data.src} alt={data.alt} />
+                                        <spam>{data.text}</spam>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+            {/* carousel movile */}
+            <div className={s.upbarmovile}>
+                <div className={s.upbar}>
+                    <button className={s.layerleft} onClick={before}><img src="/images/Layer.png" alt="layer" /></button>
+
+                    <div className={s.data}>
+                        <div>
+                            <img className={s.image} src={datas[count].src} alt={datas[count].alt} />
+                            <spam>{datas[count].text}</spam>
                         </div>
-                    )
-                })
-            }
+                    </div>
+                    <button className={s.layerright} onClick={next}><img src="/images/Layer.png" alt="layer" /></button>
+                </div>
+            </div>
         </div>
     )
 }
