@@ -117,7 +117,7 @@
 
 /*  left section frame five */
 .leftsection {
-    width: 100%;
+    width: 575px;
     height: 100%;
 }
 
@@ -176,7 +176,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 32px;
-    width: 655px;
+    width: 575px;
     margin-left: 40px;
 }
 
