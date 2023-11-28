@@ -21,7 +21,6 @@ const Upsell = () => {
             });
 
             mouseEnterImage.current.addEventListener('mouseenter', () => {
-                console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
                 sliderImage.current.style.display = 'flex';
 
@@ -37,7 +36,6 @@ const Upsell = () => {
             });
 
             mouseEnterImage.current.addEventListener('mouseenter', () => {
-                console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
                 sliderImage.current.style.display = 'none';
             })
@@ -102,7 +100,6 @@ const Upsell = () => {
             });
 
             mouseEnterImage.current.addEventListener('mouseenter', () => {
-                console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
                 sliderImage.current.style.display = 'flex';
             })
@@ -116,7 +113,6 @@ const Upsell = () => {
             });
 
             mouseEnterImage.current.addEventListener('mouseenter', () => {
-                console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
                 sliderImage.current.style.display = 'none';
             })
