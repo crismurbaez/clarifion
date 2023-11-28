@@ -9,7 +9,7 @@ const BottomBar = () => {
     }
 
     const text = [
-        'Copyright (c) 2023',
+        'Copyright (C) 2023',
         'clarifionsupport@clarifion.com',
         'Secure 256-bit SSL encryption.'
     ]
