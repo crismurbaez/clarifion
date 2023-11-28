@@ -3,13 +3,13 @@ import s from './upsell.module.css';
 
 
 const Upsell = () => {
-    // var [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const sliderImage = useRef();
     const mouseEnterImage = useRef();
 
     window.onresize = () => {
-        // setWindowWidth(window.innerWidth);
-        if (window.innerWidth < 1000) {
+
+        sliderImage.current.style.display = 'none';
+        if (window.innerWidth < 1100) {
             mouseEnterImage.current.addEventListener('mouseenter', () => {
                 console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
