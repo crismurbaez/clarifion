@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import s from './upBar.module.css';
 
 const UpBar = () => {
+
     var [count, setCount] = useState(0);
+
     const datas = [
         {
             src: '/images/checkmark-starburst-20-regular.svg',
@@ -26,7 +28,8 @@ const UpBar = () => {
         },
     ]
 
-    function next() {
+    // carousel functions-------------------
+    const next = () => {
         var number = count;
         number += 1;
         if (number > datas.length - 1) {
@@ -35,7 +38,7 @@ const UpBar = () => {
         setCount(number);
     }
 
-    function before() {
+    const before = () => {
         var number = count;
         number -= 1;
         if (number < 0) {
@@ -43,6 +46,7 @@ const UpBar = () => {
         }
         setCount(number);
     }
+    // --------------------------------------
 
     return (
         <div >
@@ -66,7 +70,9 @@ const UpBar = () => {
             {/* carousel movile */}
             <div className={s.upbarmovile}>
                 <div className={s.upbar}>
-                    <button className={s.layerleft} onClick={before}><img src="/images/Layer.png" alt="layer" /></button>
+                    <button id='before' className={s.layerleft} onClick={before}>
+                        <img src="/images/Layer.png" alt="layer" />
+                    </button>
 
                     <div className={s.data}>
 
@@ -74,7 +80,9 @@ const UpBar = () => {
                         <spam>{datas[count].text}</spam>
 
                     </div>
-                    <button className={s.layerright} onClick={next}><img src="/images/Layer.png" alt="layer" /></button>
+                    <button id='next' className={s.layerright} onClick={next}>
+                        <img src="/images/Layer.png" alt="layer" />
+                    </button>
                 </div>
             </div>
         </div>

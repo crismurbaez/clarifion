@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import s from './upsell.module.css';
 
 
 const Upsell = () => {
+    const frameFive = useRef();
+    const leftSection = useRef();
+    const sliderImage = useRef();
+    const customerSection = useRef();
+    const mouseEnterImage = useRef();
+    var windowsWidth = window.innerWidth;
     // steps of frame four
     const steps = [
 
@@ -49,6 +55,24 @@ const Upsell = () => {
             styletext: null,
         },
     ]
+    console.log(window.innerWidth)
+    useEffect(() => {
+        // if (windowsWidth < 1000) {
+        //     mouseEnterImage.current.addEventListener('mouseenter', () => {
+        //         console.log('entramos--------------------------------')
+        //         console.log(sliderImage.current)
+        //         frameFive.current.style.display = 'flex';
+        //         frameFive.current.style.flexDirection = 'column';
+        //         frameFive.current.style.justifyContent = 'center';
+        //         leftSection.current.style.display = 'flex';
+        //         leftSection.current.style.justifyContent = 'center';
+        //         sliderImage.current.style.width = '320px';
+        //         sliderImage.current.style.height = '328px';
+        //         customerSection.current.style.display = 'none';
+        //     })
+        // }
+
+    }, [windowsWidth]);
 
     return (
         <div className={s.upsell}>
@@ -99,11 +123,25 @@ const Upsell = () => {
             </div>
             {/* FRAME FIVE */}
             {/* sections */}
-            <div className={s.framefive}>
+            <div
+                ref={frameFive}
+                className={s.framefive}>
                 {/* left section frame five */}
-                <div className={s.leftsection}>
-                    <div><img className={s.imageoffer} src="/images/imageoffer.png" alt="imageoffer" /></div>
-                    <div className={s.customersection}>
+                <div
+                    ref={leftSection}
+                    className={s.leftsection}
+                >
+                    <div>
+                        <img
+                            ref={sliderImage}
+                            className={s.imageoffer}
+                            src="/images/imageoffer.png"
+                            alt="imageoffer"
+                        />
+                    </div>
+                    <div
+                        ref={customerSection}
+                        className={s.customersection}>
                         <div className={s.customer}>
                             <div><img src="/images/customerkent.png" width={48} height={48} alt="image customer" /></div>
                             <div className={s.customernivel}>
@@ -134,7 +172,11 @@ const Upsell = () => {
                         <span >
                             ($84.00 total!)</span>
                     </div>
-                    <div className={s.clarifion}>
+                    <div
+                        ref={mouseEnterImage}
+                        className={s.clarifion}
+                    >
+
                         <div className={s.imageclarifion}><img className={s.imageclarifion} src="/images/image-removebg.png" alt="image" /></div>
                         <div className={s.detail}>
                             <div className={s.title}>

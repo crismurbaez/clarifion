@@ -1,7 +1,7 @@
 .upsell {
     width: 100%;
-    height: 1241px;
     background-color: white;
+    word-wrap: break-word;
 }
 
 /* FRAME ONE */
@@ -117,7 +117,7 @@
 
 /*  left section frame five */
 .leftsection {
-    width: 575px;
+    max-width: 575px;
     height: 100%;
 }
 
@@ -176,7 +176,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 32px;
-    width: 575px;
+    max-width: 575px;
     margin-left: 40px;
 }
 
@@ -263,8 +263,6 @@
 }
 
 .tickdetail {
-    display: flex;
-    flex-direction: row;
     gap: 12px;
     color: #37465A;
 }
@@ -440,6 +438,11 @@
     /*  left section frame five */
     .leftsection {
         display: none;
+    }
+
+    .visible {
+        display: flex;
+        flex-direction: column;
     }
 
     /* right section  frame five */
