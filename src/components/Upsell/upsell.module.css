@@ -564,5 +564,8 @@
         border-bottom: 1px solid #CFCFCF
     }
 
+    .satisfaction {
+        font-size: 12px;
+    }
 
 }
