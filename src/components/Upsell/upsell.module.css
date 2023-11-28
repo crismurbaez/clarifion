@@ -427,6 +427,8 @@
     /* steps */
     .framefour {
         font-size: 12px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .step {
