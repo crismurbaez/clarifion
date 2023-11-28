@@ -46,8 +46,8 @@
         gap: 16px;
     }
 
-    .datadescktop {
-        display: none;
+    .data {
+        font-size: 12px;
     }
 
     .databottom {
