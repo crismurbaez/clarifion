@@ -1,14 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import s from './upsell.module.css';
 
 
 const Upsell = () => {
-    const frameFive = useRef();
-    const leftSection = useRef();
+    // var [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const sliderImage = useRef();
-    const customerSection = useRef();
     const mouseEnterImage = useRef();
-    var windowsWidth = window.innerWidth;
+
+    window.onresize = () => {
+        // setWindowWidth(window.innerWidth);
+        if (window.innerWidth < 1000) {
+            mouseEnterImage.current.addEventListener('mouseenter', () => {
+                console.log('entramos--------------------------------')
+                // console.log(sliderImage.current)
+                sliderImage.current.style.display = 'flex';
+
+            })
+        } else {
+            sliderImage.current.style.display = 'none';
+            mouseEnterImage.current.addEventListener('mouseenter', () => {
+                console.log('entramos--------------------------------')
+                // console.log(sliderImage.current)
+                sliderImage.current.style.display = 'none';
+            })
+        }
+    };
+
+
     // steps of frame four
     const steps = [
 
@@ -55,24 +73,22 @@ const Upsell = () => {
             styletext: null,
         },
     ]
-    console.log(window.innerWidth)
     useEffect(() => {
-        // if (windowsWidth < 1000) {
-        //     mouseEnterImage.current.addEventListener('mouseenter', () => {
-        //         console.log('entramos--------------------------------')
-        //         console.log(sliderImage.current)
-        //         frameFive.current.style.display = 'flex';
-        //         frameFive.current.style.flexDirection = 'column';
-        //         frameFive.current.style.justifyContent = 'center';
-        //         leftSection.current.style.display = 'flex';
-        //         leftSection.current.style.justifyContent = 'center';
-        //         sliderImage.current.style.width = '320px';
-        //         sliderImage.current.style.height = '328px';
-        //         customerSection.current.style.display = 'none';
-        //     })
-        // }
+        if (window.innerWidth < 1000) {
+            mouseEnterImage.current.addEventListener('mouseenter', () => {
+                console.log('entramos--------------------------------')
+                // console.log(sliderImage.current)
+                sliderImage.current.style.display = 'flex';
+            })
+        } else {
+            mouseEnterImage.current.addEventListener('mouseenter', () => {
+                console.log('entramos--------------------------------')
+                // console.log(sliderImage.current)
+                sliderImage.current.style.display = 'none';
+            })
+        }
 
-    }, [windowsWidth]);
+    }, []);
 
     return (
         <div className={s.upsell}>
@@ -126,23 +142,20 @@ const Upsell = () => {
             {/* FRAME FIVE */}
             {/* sections */}
             <div
-                ref={frameFive}
                 className={s.framefive}>
                 {/* left section frame five */}
                 <div
-                    ref={leftSection}
+
                     className={s.leftsection}
                 >
                     <div>
                         <img
-                            ref={sliderImage}
                             className={s.imageoffer}
                             src="/images/imageoffer.png"
                             alt="imageoffer"
                         />
                     </div>
                     <div
-                        ref={customerSection}
                         className={s.customersection}>
                         <div className={s.customer}>
                             <div><img src="/images/customerkent.png" width={48} height={48} alt="image customer" /></div>
@@ -174,6 +187,12 @@ const Upsell = () => {
                         <span >
                             ($84.00 total!)</span>
                     </div>
+                    <img
+                        ref={sliderImage}
+                        className={s.imageoffermovile}
+                        src="/images/imageoffer.png"
+                        alt="imageoffer"
+                    />
                     <div
                         ref={mouseEnterImage}
                         className={s.clarifion}

@@ -127,6 +127,10 @@
     height: 591px;
 }
 
+.imageoffermovile {
+    display: none;
+}
+
 .customersection {
     width: 575px;
     height: 186px;
@@ -485,6 +489,7 @@
 
     /* right section  frame five */
     .rightsection {
+        align-items: center;
         margin: 0;
         gap: 24px;
     }
@@ -492,6 +497,12 @@
     .special {
         text-align: center;
         font-size: 24px;
+    }
+
+    .imageoffermovile {
+        display: none;
+        width: 320px;
+        height: 328px;
     }
 
     .imageclarifion {
@@ -511,6 +522,11 @@
         display: inline;
         text-align: center;
         font-size: 12px;
+    }
+
+    .ticklist {
+        width: 100%;
+        justify-content: start;
     }
 
     .tickdetail {
