@@ -5,11 +5,21 @@ import s from './upsell.module.css';
 const Upsell = () => {
     const sliderImage = useRef();
     const mouseEnterImage = useRef();
+    var positionImage;
 
     window.onresize = () => {
 
         sliderImage.current.style.display = 'none';
+
         if (window.innerWidth < 1100) {
+
+            window.addEventListener('scroll', () => {
+                positionImage = sliderImage.current.getBoundingClientRect().top;
+                if (positionImage < window.innerHeight) {
+                    sliderImage.current.style.display = 'flex';
+                }
+            });
+
             mouseEnterImage.current.addEventListener('mouseenter', () => {
                 console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
@@ -18,6 +28,14 @@ const Upsell = () => {
             })
         } else {
             sliderImage.current.style.display = 'none';
+
+            window.addEventListener('scroll', () => {
+                positionImage = sliderImage.current.getBoundingClientRect().top;
+                if (positionImage < window.innerHeight) {
+                    sliderImage.current.style.display = 'none';
+                }
+            });
+
             mouseEnterImage.current.addEventListener('mouseenter', () => {
                 console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
@@ -75,19 +93,34 @@ const Upsell = () => {
     ]
     useEffect(() => {
         if (window.innerWidth < 1000) {
+
+            window.addEventListener('scroll', () => {
+                positionImage = sliderImage.current.getBoundingClientRect().top;
+                if (positionImage < window.innerHeight) {
+                    sliderImage.current.style.display = 'flex';
+                }
+            });
+
             mouseEnterImage.current.addEventListener('mouseenter', () => {
                 console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
                 sliderImage.current.style.display = 'flex';
             })
         } else {
+
+            window.addEventListener('scroll', () => {
+                positionImage = sliderImage.current.getBoundingClientRect().top;
+                if (positionImage < window.innerHeight) {
+                    sliderImage.current.style.display = 'none';
+                }
+            });
+
             mouseEnterImage.current.addEventListener('mouseenter', () => {
                 console.log('entramos--------------------------------')
                 // console.log(sliderImage.current)
                 sliderImage.current.style.display = 'none';
             })
         }
-
     }, []);
 
     return (
