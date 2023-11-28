@@ -260,7 +260,7 @@ const Upsell = () => {
                         </div>
                     </div>
                     <div className={s.satisfaction}>
-                        <div className={s.imagesatisfaction}><img src="/images/satisfaction.png" alt="satisfaction" /></div>
+                        <img className={s.imagesatisfaction} src="/images/satisfaction.png" alt="satisfaction" />
 
                         <div>If you are not completely thrilled with your
                             Clarifion - We have a <b>30 day satisfaction guarantee</b> .

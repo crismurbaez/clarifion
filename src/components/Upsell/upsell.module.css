@@ -566,6 +566,17 @@
 
     .satisfaction {
         font-size: 12px;
+        line-height: 16.80px;
+    }
+
+    .imagesatisfaction {
+        width: 48px;
+        height: 48px;
+    }
+
+    .textsatisfaction {
+        width: 256px;
+        height: 77px;
     }
 
 }
