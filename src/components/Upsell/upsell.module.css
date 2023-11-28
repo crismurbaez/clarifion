@@ -2,6 +2,7 @@
     width: 100%;
     background-color: white;
     word-wrap: break-word;
+
 }
 
 /* FRAME ONE */
@@ -377,6 +378,7 @@
     .upsell {
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 32px;
     }
 
     /* FRAME ONE */
