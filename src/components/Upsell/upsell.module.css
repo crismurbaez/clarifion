@@ -431,14 +431,20 @@
 
     .step {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 8px;
+    }
+
+    .tickcircle {
+        width: 20px;
+        height: 20px;
     }
 
     .imagecircle {
         width: 20px;
         height: 20px;
-
     }
 
     .imagetick {
@@ -456,6 +462,7 @@
 
     .steptext {
         display: none;
+        font-size: 12px;
     }
 
     /* FRAME FIVE */
