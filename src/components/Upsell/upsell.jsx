@@ -223,7 +223,7 @@ const Upsell = () => {
                     <div>
                         <div>
                             <button className={s.buttonyes}>
-                                <div>Yes - Claim my discount</div>
+                                <div className={s.textbutton}>Yes - Claim my discount</div>
                                 <img className={s.arrowbutton} src="/images/arrow.svg" alt="arrow" />
                             </button>
                         </div>
