@@ -564,6 +564,10 @@
         border-bottom: 1px solid #CFCFCF
     }
 
+    .nothanks {
+        font-size: 12px;
+    }
+
     .satisfaction {
         font-size: 12px;
         line-height: 16.80px;
