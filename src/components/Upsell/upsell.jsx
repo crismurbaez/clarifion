@@ -197,7 +197,7 @@ const Upsell = () => {
                                     <div style={{ width: 8.53, height: 8.53, left: 3.79, top: 3.79, position: 'absolute', background: '#2C7EF8', borderRadius: 9999 }} />
                                 </div>
 
-                                <div>12 left in Stock</div>
+                                <div className={s.textstock}>12 left in Stock</div>
                             </div>
                             <div className={s.commentproductdesktop}>Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.</div>
                         </div>

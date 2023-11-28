@@ -499,6 +499,10 @@
         height: 80px;
     }
 
+    .textstock {
+        font-size: 12px;
+    }
+
     .commentproductdesktop {
         display: none;
     }
@@ -506,6 +510,11 @@
     .commentproductmovile {
         display: inline;
         text-align: center;
+        font-size: 12px;
+    }
+
+    .tickdetail {
+        font-size: 12px;
     }
 
 
